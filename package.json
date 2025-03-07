@@ -11,6 +11,8 @@
     "build:transformer": "yarn --cwd packages/idea-transformer build",
     "build:idea": "yarn --cwd packages/idea build",
     "build:example": "yarn --cwd example build",
+    "build:web": "yarn --cwd packages/idea-web build",
+    "dev:web": "yarn --cwd packages/idea-web dev",
     "report": "nyc yarn test && nyc report -r lcov",
     "transform": "yarn --cwd example transform",
     "test": "yarn test:parser && yarn test:transformer",
@@ -19,5 +21,10 @@
   },
   "devDependencies": {
     "nyc": "17.1.0"
+  },
+  "dependencies": {
+    "@stackpress/ink-css": "^0.4.1",
+    "@stackpress/ink-express": "^0.4.1",
+    "@stackpress/ink-ui": "^0.4.1"
   }
 }
