@@ -1,3 +1,6 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Default Theme
 ---------------------------------*/
 :root {
@@ -5,12 +8,28 @@
   --secondary: #008071;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400; 
+  line-height: 26px; 
+  letter-spacing: 0.5px; 
+  
+}
+
+h1, h2 {
+  font-size: 32px;
+  font-weight: 500; 
+  letter-spacing: 1px; 
+  line-height: 44px;
+}
+
 body.dark {
-  --bg-0: #000912;
-  --bg-1: #00152B;
-  --bg-2: #001F41;
-  --bg-3: #00254D;
-  --bg-4: #003268;
+  --bg-0: #23272f;
+  --bg-1: #1c1f26;
+  --bg-2: #224b5e;
+  --bg-3: #007a84;
+  --bg-4: #26aa8e;
   --bd-0: #000912;
   --bd-1: #00152B;
   --bd-2: #001F41;
@@ -20,6 +39,13 @@ body.dark {
   --tx-0: #EFEFEF;
   --tx-1: #D3D3D3;
   --tx-inverse: #CFCFCF;
+}
+
+body.dark .bg-gradient {
+  background-image: conic-gradient(from 90deg at -10% 100%, rgb(43, 48, 59), var(--bg-1));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 body.light {
@@ -41,4 +67,58 @@ body.light {
 
 i18n-translate {
   display: block;
+}
+
+.border-primary {
+  border-top: solid rgba(246, 247, 249, 0.1);
+  border-width: 1px 0 0 0; 
+  border-image: none 100% / 1 / 0 stretch;
+}
+
+.code {
+  font-family: "Courier New", monospace; 
+  background-color: #404756; 
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+element-button {
+  font-size: 20px !important; /* Bigger font */
+  font-weight: 600; /* Bolder text */
+  border-radius: 999px; /* Soft rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  text-transform: none; /* No uppercase */
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space if an icon is added */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Active (Click) Effect */
+element-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(0, 132, 255, 0.3);
 }

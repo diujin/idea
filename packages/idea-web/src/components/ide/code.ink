@@ -15,7 +15,7 @@
     display: inline !important;
   }
   .snippet {
-    background-color: #000000;
+    background-color: #16181d;
     color: #ABB2BF;
     height: 100%;
     margin: 0;

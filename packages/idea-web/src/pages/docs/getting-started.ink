@@ -33,7 +33,7 @@
 </script>
 <html>
   <html-head />
-  <body class="light bg-t-0 tx-t-1 tx-arial">
+  <body class="dark bg-t-0 tx-t-1 tx-arial">
     <panel-layout>
       <header><html-header /></header>
       <aside left><html-aside /></aside>
@@ -63,14 +63,14 @@
       </aside>
       <main>
         <api-docs>
-          <h1 class="tx-primary tx-uppercase tx-30 py-20">
+          <h1 class="tx-0 tx-uppercase tx-30 py-20">
             {_('Getting Started')}
           </h1>
 
-          <i18n-translate p trim class="tx-lh-36 py-20">
+          <i18n-translate p trim class="tx-lh-36">
             To try out Ink, run the following commands in terminal: 
           </i18n-translate>
-          <ide-app title="Terminal" class="py-20">
+          <ide-app title="Terminal">
             <ide-code lang="bash">
               npm init -y && npm install --save @stackpress/ink && npm install --save-dev ts-node typescript @types/node
             </ide-code>
